@@ -1,0 +1,191 @@
+/* IMPOSTAZIONI GENERALI */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    background-image: url('../img/sfondo.png');
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+}
+a:link,
+a:visited {
+    color: #009FC3;
+    text-decoration: underline;
+}
+
+nav a:link, header a:visited{
+    color: white;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li::before{
+    content: '-> ';
+}
+nav ul li::after{
+    content: ' <-';
+}
+
+nav ul{
+    padding: 0;
+}
+
+
+
+header {
+    text-align: center;
+    background-image: linear-gradient(180deg, #009CC8, #016888);
+    padding: 20px;
+    margin: 0 5%;
+    color: white;
+}
+
+header, section, footer{
+    margin: 5%;
+    box-shadow: 3px 3px 5px 5px gray, -3px -3px 5px 5px gray;
+}
+
+ section{
+    background-color: white;
+    
+    padding: 10px 5px 10px 5px;
+
+    
+}
+
+.title{
+    margin: 10px;
+    font-weight: 400;
+    font-size: 2.1em;
+}
+
+.author{
+    color: #A59EA5;
+    font-size: 0.8em;
+}
+
+b{
+    color: #AA2072;
+    font-weight: 600;
+}
+
+kbd{
+    background-color: #DEE3E4;
+    border: 1px solid #A6A7A5;
+    border-radius: 5px;
+}
+
+table th{
+    background-color: #3369C8;
+    color: white;
+    font-weight: normal;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border-bottom: 1px solid  #3369C8;
+}
+
+table th, table td{
+    border-left: 0.5px solid white;
+    border-right: 0.5px solid white;
+}
+
+table tr:nth-child(even){
+    background-color: #F1F1F1;
+
+}
+
+table tr{
+    height: 50px;
+}
+table caption{
+    font-style: italic;
+    
+}
+
+table th, table td{
+    text-align: center;
+}
+
+.videoYT{
+
+    text-align: center;
+}
+
+.videoYT iframe{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.cosesotto, .correlati{
+    background-color: #DFE7E8;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.titolisotto{
+    text-align: center;
+    font-weight: 500;
+    padding-top: 10px;
+}
+input[type=mail]{
+    border: 0;
+    padding: 5px;
+    border-bottom: 1px dotted gray;
+    width: 60%
+}
+
+fieldset{
+    border: 0;
+    width: 100%;
+}
+
+button{
+    width: 38%;
+    background-color: #5069B3;
+    color: white;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.correlati {
+    margin-bottom: 20px;
+    border: 1px solid #C6C6C6;
+    padding-top: 10px;
+}
+
+.correlati p, .correlati .data {
+    margin-top: 1px;
+}
+
+.data{
+    text-align: right;
+}
+
+footer{
+    background-image: linear-gradient(180deg, #005566, #373B35);
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+footer a:link, footer a:visited{
+    color: #FE05F9;
+}
