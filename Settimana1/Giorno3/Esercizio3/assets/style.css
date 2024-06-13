@@ -1,0 +1,102 @@
+
+html, body{
+    font-size: 65.5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    margin-top: 5px;
+}
+
+a:visited, a:link{
+    color: #107777;
+
+}
+.logo {
+    text-align: center;
+    
+}
+
+.logo img {
+    width: 10%;
+}
+
+header{
+    text-align: center;
+}
+
+header p {
+    font-size: 1.2em;
+    background-color: #FDFBF1;
+    color: #004D4B;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #FFD777;
+}
+
+.title{
+    font-size: 2rem;
+    text-align: center;
+}
+/*
+.descrizione, .descrizionevideo{
+    font-size: 1.8em;
+}*/
+
+main{
+    font-size: 1.8em;
+    width: 50%;
+    margin: 20px auto;
+    /*margin-left: 25%;
+    margin-right: 25%;*/
+}
+
+.dv{
+    text-align: center;
+}
+
+.video video{
+    width: 100%;
+}
+
+.descrizionevideo{
+    margin-top: 5px;
+    color: #999999;
+    font-weight: normal;
+
+}
+
+article{
+    margin-top: 20px;
+    padding-left: 10px;
+    border-left: 1px solid #FFD777;
+}
+
+article p {
+    color: red;
+    padding: 0 auto;
+}
+
+article p, a{
+    margin: 2px auto;
+}
+.ingredienti{
+    font-weight: normal;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #C3F3F1;
+}
+
+section p {
+    font-weight: bold;
+}
+
+section ul li{
+    margin: 15px 0;
+}
+
+.metodo ul li{
+    list-style-type: none;
+}
+
+.metodo p {
+    font-weight: normal;
+}
