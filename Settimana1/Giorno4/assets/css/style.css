@@ -128,6 +128,7 @@ table th, table td{
 
 .videoYT iframe{
     width: 100%;
+    height: 200px;
     border-radius: 30px;
 }
 
@@ -146,7 +147,7 @@ table th, table td{
 input[type=mail]{
     border: 0;
     padding: 5px;
-    border-bottom: 1px dotted gray;
+    border-bottom: 1px dashed gray;
     width: 60%
 }
 
