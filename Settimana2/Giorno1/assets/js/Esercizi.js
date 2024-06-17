@@ -12,7 +12,7 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-function esempio() { //N.B. Ho usato le funzione per poter mettere tuto nella stessa pagina
+function esempio() { //N.B. Ho usato le funzioni per poter mettere tuto nella stessa pagina
     let numero = 20;
     let nome = 'Giorgio';
     let bool = true;
