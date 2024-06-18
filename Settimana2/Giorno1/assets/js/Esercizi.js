@@ -18,7 +18,9 @@ function esempio() { //N.B. Ho usato le funzioni per poter mettere tuto nella st
     let bool = true;
     let niente = null;
     let indefinito;
+    document.getElementById('es1').innerText = 'Numero= ' + numero + ' Nome= ' + nome + ' bool= ' + bool + ' Niente= ' + niente + ' indefinito= ' + indefinito;
     console.log(numero + nome + bool + niente + indefinito);
+
 
 }
 esempio();
