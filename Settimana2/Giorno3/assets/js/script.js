@@ -125,7 +125,7 @@ console.log(charactersNames);
 const femaleCharacters = [];
 for (i = 0; i < starWarsCharacters.length; i++) {
     if (starWarsCharacters[i].gender === 'female') {
-        femaleCharacters.push(starWarsCharacters[i].name, starWarsCharacters[i].gender);
+        femaleCharacters.push(starWarsCharacters[i]);
     }
 }
 console.log(femaleCharacters);
@@ -139,7 +139,7 @@ const eyeColor = {
     yellow: [],
     brown: [],
     red: [],
-    blueGray: [],
+    'blue-gray': [],
 }
 
 /* ESERCIZIO 5
@@ -162,7 +162,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
             eyeColor.red.push(starWarsCharacters[i].name);
             break;
         case 'blue-gray':
-            eyeColor.blueGray.push(starWarsCharacters[i].name);
+            eyeColor['blue-gray'].push(starWarsCharacters[i].name);
             break;
     }
 }
