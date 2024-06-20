@@ -224,11 +224,14 @@ console.log(starWarsCharacters);
 
 console.log('++++Esercizio 9+++++++')
 console.log(charactersNames.length);
+console.log(charactersNames);
+console.log(femaleCharacters);
 
-for(let i = 0; i < charactersNames.length; i++){
+for(let i = 0; i < charactersNames.length; i++){ 
     for(let y = 0; y < femaleCharacters.length; y++){
-        if(charactersNames[i] === femaleCharacters[y]){
+        if(charactersNames[i] === femaleCharacters[y].name){
             charactersNames.pop(i);
+            console.log(charactersNames[i] +  ' ' + femaleCharacters[y].name);
         }
     }
 }
