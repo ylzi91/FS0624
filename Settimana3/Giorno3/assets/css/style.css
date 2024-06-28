@@ -1,0 +1,35 @@
+main{
+    text-align: center;
+    vertical-align: center;
+    padding-top: 300px;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+article{
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+p{
+    width: 70%;
+    text-align: left;
+    background-color: gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.mybutton{
+    background-color: white;
+    margin-left: 2%;
+    padding: 10px;
+    border: 0px;
+}

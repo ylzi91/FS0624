@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#content {
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+form{
+    padding-bottom: 20px;
+}
+
+#bigCartel {
+    width: 992px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.cellStyle {
+    position: relative;
+    display: inline-block;
+    border: 1px solid black;
+    width: 6.5%;
+    height: 40px;
+    margin-right: 1px;
+}
+
+.cellStyle span {
+    position: absolute;
+    display: block;
+    top: 10%;
+    left: 40%;
+}
+
+.colorCell {
+    background-color: red;
+}
