@@ -16,6 +16,7 @@ body {
   background-color: rgba(255, 255, 255, 0.548);
   border: 2px solid white;
   border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px grey, -1px -1px 1px 1px gray;
   
 }
 
