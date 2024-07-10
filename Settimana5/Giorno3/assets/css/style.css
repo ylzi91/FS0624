@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #732105;
+}
+
+
+header nav {
+    width: 84%;
+    margin: 1em auto;
+    padding: 3%;
+    background-color: #FEF7E2;
+    border-radius: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li img {
+    width: 40px;
+}
+
+nav ul li {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 1em;
+    background-color: #FFDF7E;
+    margin-bottom: 1em;
+    width: 30%;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50px;
+}
+
+nav ul li:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    width: 90%;
+    vertical-align: middle;
+}
+
+h1 {
+    text-align: center;
+}
+
+article,
+aside {
+    background-color: #FEF7E2;
+    padding-bottom: 1em;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    border-radius: 50px;
+
+}
+
+article img {
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardContent div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0.7em 0;
+    align-items: center;
+}
+
+.cardContent div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardContent p,
+.cardContent h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.cardContent div div p {
+    font-size: 0.9em;
+}
+
+.cardContent button {
+    color: #732105;
+    font-weight: bold;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #FFDF7E;
+    border: none;
+    border-radius: 50px;
+    padding: 1em;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+aside h4 {
+    font-size: 1.2em;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3%;
+    padding-bottom: 5%;
+    width: 84%;
+}
+
+aside img {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+    header nav {
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+        padding-top: 2%;
+        margin-top: 0;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        font-size: 0.8em;
+        width: 70px;
+        align-self: center;
+        margin-right: 0.5em;
+    }
+
+    nav ul li:nth-of-type(2) {
+        order: 3;
+    }
+
+    nav ul li:nth-of-type(3) {
+        order: 2;
+    }
+
+    nav ul li:nth-of-type(1) {
+        width: 100px;
+        font-size: 1em;
+        align-items: center;
+        order: 1;
+    }
+
+    #content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    article {
+        width: 45%;
+
+    }
+
+    article:last-child {
+        display: none;
+    }
+
+    @media screen and (min-width:768px) {
+        body {
+            display: flex;
+        }
+
+        header {
+            margin-right: 2%;
+            position: fixed;
+            width: 30%;
+        }
+
+        nav {
+            height: 100vh;
+        }
+
+        #content {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        main {
+            width: 70%;
+            margin-left: 32%;
+        }
+
+
+
+        nav ul li {
+            display: flex;
+            width: 200px;
+            font-size: 1.4em;
+            margin: 1em;
+            height: 60px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav ul li:nth-of-type(1) {
+            width: 200px;
+            order: 0;
+            font-size: 2em;
+        }
+
+        article {
+            width: 30%;
+            margin-left: 1%;
+        }
+
+        article:nth-of-type(4) {
+            display: none;
+        }
+
+        h1,
+        h2 {
+            text-align: left;
+        }
+
+        aside {
+            margin: 0;
+        }
+
+    }
+
+    @media screen and (min-width:1200px) {
+        #content{
+            justify-content: center;
+
+
+        }
+        
+        article {
+            width: 23%;
+            margin-left : 1px;
+        }
+
+
+        article:nth-of-type(4) {
+            display: block;
+        }
+        aside{
+            width: 90%;
+        }
+    }
+
+}
