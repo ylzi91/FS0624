@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Playwrite CU", cursive;
+}
+
+#board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 1200px;
+    background-color: grey;
+}
+
+.postIt h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.postIt p {
+    font-size: 1.5em;
+}
+
+.postIt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 0px 12px 3px #000000;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 250px;
+    height: 200px;
+    opacity: 0;
+
+}
+
+.postIt:nth-of-type(1){
+    animation: appiccica 0.5s linear 0s ;
+    opacity: 1;
+}
+
+.postIt:nth-of-type(2){
+    animation: appiccica 0.5s linear 0.5s  ;
+    opacity: 1;
+}
+.postIt:nth-of-type(3){
+    animation: appiccica 0.5s linear 1s  ;
+    opacity: 1;
+}
+
+.postIt:nth-of-type(4){
+    animation: appiccica 0.5s linear 1.5s  ;
+    opacity: 1;
+}
+.postIt:nth-of-type(5){
+    animation: appiccica 0.5s linear 2s  ;
+    opacity: 1;
+}
+
+.postIt:nth-of-type(6){
+    animation: appiccica 0.5s linear 2.5s  ;
+    opacity: 1;
+}
+.postIt:nth-of-type(7){
+    animation: appiccica 0.5s linear 3s  ;
+    opacity: 1;
+}
+
+.postIt:nth-of-type(8){
+    animation: appiccica 0.5s linear 3.5s  ;
+    opacity: 1;
+}
+@keyframes appiccica {
+    0%{
+        opacity: 0;
+        transform: scale(5);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+}
+.postIt:hover{
+    transform: rotate(0deg) scale(1.2);
+}
+
+.yellow {
+
+    background: linear-gradient(0deg, rgba(92, 91, 91, 0.762) 0%, rgba(243, 255, 0, 1) 41%);
+    transform: rotate(-5deg);
+}
+
+.green {
+    background: linear-gradient(0deg, rgba(108, 108, 109, 1) 0%, rgb(85, 255, 0) 41%);
+    transform: rotate(5deg);
+}
+
+.violet {
+    background: linear-gradient(0deg, rgba(108, 108, 109, 1) 0%, rgb(179, 0, 255) 41%);
+    transform: rotate(-3deg);
+}
