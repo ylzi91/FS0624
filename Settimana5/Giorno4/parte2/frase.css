@@ -31,51 +31,56 @@ p {
 .parole i {
     display: block;
     position: absolute;
-    top: -150px;
+    top: -10px;
     left: 175px;
     /*animation: fadeIn 5s linear; */
-
 }
 
 .parole i:nth-child(1) {
-    top: -150px;
-    animation: fadeIn 6s linear, fadeOut 6s linear 18s infinite;
+    top: -10px;
+    animation: fadeIn 9s linear infinite;
 }
 
 .parole i:nth-child(2) {
-    top: -150px;
-    animation: fadeIn 6s linear 6s, fadeOut 6s linear 24s infinite; 
+    top: -10px;
+    animation: fadeIn 9s linear 3s infinite;
 
 }
 
 .parole i:nth-child(3) {
-    top: -150px;
-    animation: fadeIn 6s linear 12s, fadeOut 6s linear 30s infinite;
+    top: -10px;
+    animation: fadeIn 9s linear 6s infinite;
 }
 
 
 @keyframes fadeIn {
     0% {
-        top: -150px;
+        top: -10px;
         opacity: 0;
+    }
+
+    16.5% {
+        top: 32px;
+        opacity: 1;
     }
 
     25% {
         top: 32px;
         opacity: 1;
-    }
-
-    75% {
-        top: 32px;
-        opacity: 1;
 
     }
 
-    100% {
-        top: 150px;
+    33% {
+        top: 50px;
         opacity: 0;
     }
+    100% {
+        top: 50px;
+        opacity: 0;
+    }
+
 }
+
 
 @keyframes fadeOut {
 
