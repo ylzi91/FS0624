@@ -1,0 +1,12 @@
+
+$my-margin: (
+    sm: 1em,
+    md: 1.5em,
+    lg: 2em,
+);
+
+@each $break, $value in $my-margin {
+    .margin-#{$break}{
+        margin: $value;
+    }
+}

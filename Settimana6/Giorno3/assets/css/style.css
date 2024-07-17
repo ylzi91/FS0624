@@ -1,0 +1,204 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.font-sm {
+  font-size: 0.8em;
+}
+
+.font-md {
+  font-size: 1em;
+}
+
+.font-lg {
+  font-size: 1.5em;
+}
+
+.margin-sm {
+  margin: 1em;
+}
+
+.margin-md {
+  margin: 1.5em;
+}
+
+.margin-lg {
+  margin: 2em;
+}
+
+.btn {
+  border: 0;
+  padding: 0.5em;
+  border-radius: 50px;
+  box-shadow: 0 0 3px 0 rgb(255, 254, 254);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #4caf50;
+}
+.btn:focus {
+  background-color: #ff8700;
+}
+
+.btn-primary {
+  background-color: #0e6cff;
+}
+
+.p {
+  padding: 1%;
+}
+
+.p-1 {
+  padding: 0;
+}
+
+.p-2 {
+  padding: 0;
+}
+
+.p-3 {
+  padding: 0;
+}
+
+.p-4 {
+  padding: 0;
+}
+
+.p-5 {
+  padding: 0;
+}
+
+.col-1 {
+  width: 10%;
+  padding: 0;
+}
+
+.col-2 {
+  width: 20%;
+  padding: 0;
+}
+
+.col-3 {
+  width: 25%;
+  padding: 0;
+}
+
+.col-4 {
+  width: 33%;
+  padding: 0;
+}
+
+.col-5 {
+  width: 50%;
+  padding: 0;
+}
+
+.col-6 {
+  width: 66%;
+  padding: 0;
+}
+
+.col-7 {
+  width: 75%;
+  padding: 0;
+}
+
+.col-8 {
+  width: 80%;
+  padding: 0;
+}
+
+.col-9 {
+  width: 90%;
+  padding: 0;
+}
+
+.col-10 {
+  width: 100%;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+header {
+  display: block;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #640fc5;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 5em;
+}
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: grey;
+  align-items: center;
+  margin: 0 auto;
+}
+header .hero {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  background-color: #640fc5;
+  align-items: center;
+  margin: 0 auto;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+}
+header ul li {
+  margin-right: 2em;
+}
+header ul button {
+  margin-right: 2em;
+}
+
+section {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  background-color: white;
+  align-items: center;
+  margin: 0 auto;
+}
+section article {
+  display: block;
+  width: 25%;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  margin: 0 auto;
+}
+section article img {
+  width: 100%;
+}
+
+a {
+  color: #f4f4f4;
+}/*# sourceMappingURL=style.css.map */

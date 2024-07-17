@@ -1,0 +1,109 @@
+
+@mixin customHeader($bg-color, $disp: flex, $myWidth: 100%, $space: space-between){
+    display: $disp;
+    width: $myWidth;
+    justify-content: $space;
+    background-color: $bg-color;
+    align-items: center;
+    margin: 0 auto;
+}
+@mixin customUl ($dir: row){
+    display: flex;
+    flex-direction: $dir;
+
+}
+
+
+
+$paddin: 0;
+.p{
+    padding: 1%;
+}
+
+@for $i from 1 to 6 {
+    .p-#{$i}{
+        padding: $paddin * $i;
+    }
+}
+
+ @mixin cont (){
+    display: flex;
+    width: 100%;
+}
+
+@mixin myRow(){
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+$myCol: (
+    col-1: 10% - ($paddin * 2),
+    col-2: 20% - ($paddin * 2),
+    col-3: 25% - ($paddin * 2),
+    col-4: 33% - ($paddin * 2),
+    col-5: 50% - ($paddin * 2),
+    col-6: 66% - ($paddin * 2),
+    col-7: 75% - ($paddin * 2),
+    col-8: 80% - ($paddin * 2),
+    col-9: 90% - ($paddin * 2),
+    col-10: 100% - ($paddin * 2), 
+);
+
+
+
+@each $break, $value in $myCol {
+    .#{$break}{
+        width: $value;
+        padding: $paddin;
+    }
+}
+
+.container {
+    @include cont();
+}
+
+.row{
+    @include myRow();
+}
+
+
+
+
+header {
+    @include customHeader($bg-hero, block);
+    margin-bottom: 5em;
+    nav {
+    @include customHeader($header-color);
+    }
+    .hero{
+        @include customHeader($bg-hero,flex,80%, center);
+    }
+
+    ul{
+        @include customUl();
+        li{
+            margin-right: 2em;
+        }
+        button{
+            margin-right: 2em;
+        }
+    }
+
+}
+
+section{
+    @include customHeader(white,flex , 90% ,space-around);
+    article{
+        @include customHeader(white, block , 25%);
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+
+
+

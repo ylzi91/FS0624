@@ -1,0 +1,12 @@
+
+
+@import 'prompt/reset';
+@import 'prompt/color';
+@import 'prompt/font';
+@import 'prompt/spacing';
+@import 'prompt/button';
+@import 'prompt/mixins';
+
+a{
+    color: $text-color;
+}

@@ -1,0 +1,19 @@
+
+
+.btn{
+    border: 0;
+    padding: 0.5em;
+    border-radius: 50px;
+    box-shadow: 0 0 3px 0 rgb(255, 254, 254);
+    cursor: pointer;
+    &:hover {
+        background-color: $btn-hover;
+    }
+    &:focus{
+        background-color: $btn-press;
+    }
+}
+
+.btn-primary{
+    background-color: $btn-primary;
+}
