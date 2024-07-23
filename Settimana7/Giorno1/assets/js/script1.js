@@ -30,6 +30,14 @@ class Pet {
         this.species = [_species];
         this.breed = [_breed];
     }
+    moreAnimals() {
+        if (this.petName.length > 1) {
+            return true;
+        }
+        else
+            return false;
+
+    }
 }
 const pets = [];
 const myUl = document.getElementsByClassName('list-group')[0];
@@ -70,11 +78,11 @@ document.getElementsByTagName('form')[0].addEventListener('submit', function (e)
         pets.push(new Pet(petName, ownerName, species, breed));
     }
 
-    console.log(pets);
+    console.log(pets[0].moreAnimals());
 
 
 
-  
+
 
     for (i = 0; i < pets.length; i++) {
         newLi = document.createElement('li');
@@ -82,7 +90,13 @@ document.getElementsByTagName('form')[0].addEventListener('submit', function (e)
         newLi.innerText = `${pets[i].ownerName}`;
         newUl = document.createElement('ul');
         newLi2 = document.createElement('li');
-        newLi2.innerText = `${pets[i].species} ${pets[i].petName} ${pets[i].breed}`;
+        if (petName.length === 0){
+        for(let j = 0; j < petName.length; j++){
+        newLi2.innerText = `Specie: ${pets[i].species[j]} Nome: ${pets[i].petName[j]}Tipo: ${pets[i].breed[j]}`;
+        }
+    }   else{
+        newLi2.innerText = `Specie: ${pets[i].species} Nome: ${pets[i].petName}Tipo: ${pets[i].breed}`;
+    }
         newUl.appendChild(newLi2);
         newLi.appendChild(newUl);
         myUl.appendChild(newLi);
