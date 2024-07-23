@@ -3,7 +3,7 @@ const text1 = document.getElementById('text1');
 const btn1 = document.getElementById('btn1');
 const main = document.getElementsByTagName('main')[0];
 const listName = document.getElementById('listName');
-let flag = false;
+
 const arrayStor = JSON.parse(localStorage.getItem('myName'));
 const arrayName = arrayStor ? arrayStor : [];
 console.log(arrayName);
@@ -27,7 +27,7 @@ const showArray = function (array = []) {
         myDiv.appendChild(delBtn);
         listName.appendChild(myDiv);
     }
-    flag = true;
+
 }
 
 
