@@ -1,0 +1,101 @@
+
+const myRow = document.getElementById('myRow')
+const bolCart = document.getElementById('bolCart')
+const cart = document.getElementById('cart')
+const body = document.getElementsByTagName('body')[0]
+const insertBook = document.getElementById('insertBook')
+const arrayOfBooksGl = []
+const arrayCart = []
+const getMyBook = function () {
+    fetch('https://striveschool-api.herokuapp.com/books')
+        .then((response) => {
+            if (response) {
+                return response.json();
+            }
+            else {
+                throw new Error('La risposta non è corretta')
+            }
+        })
+        .then((data) => {
+            console.log(data)
+            insertData(data)
+            showData()
+        })
+        .catch((error) => {
+            console.log('errore', error);
+        })
+}
+
+
+
+const insertData = function (arrayOfbooks) {
+    arrayOfbooks.forEach((user) => {
+        arrayOfBooksGl.push(user)
+
+    })
+
+}
+
+
+getMyBook();
+
+const showData = function () {
+    myRow.innerHTML = ''
+    arrayOfBooksGl.forEach((book, index) => {
+        myRow.innerHTML += `
+        <div class="col-4 mb-4 d-flex justify-content-center">
+                <div class="card w-50 d-flex flex-column">
+                  <img src= "${book.img}"
+                    class="card-img-top img-fluid w-100" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <div class = " flex-grow-1 ">
+                            <h5 class="card-title">${book.title}</h5>
+                            <p class="card-text mb-2">Prezzo: ${book.price}</p>
+                            <p class="card-text">Genere: ${book.category}</p>
+                        </div>
+                        <button class="btn btn-success mb-2 mt-2" onclick = "buyItem(${index})">Aggiungi</button>
+                        <button class="btn btn-danger  " onclick = "deleteBook(${index})">Scarta</button>
+                        
+                    </div>
+                </div>
+
+        </div>`
+
+    })
+}
+
+const deleteBook = function (index) {
+    arrayOfBooksGl.splice(index, 1)
+    showData()
+
+}
+let i = 0
+
+const buyItem = function (index) {
+    i++
+    bolCart.innerText = i
+    if (i === 1) {
+        bolCart.classList.add('visible')
+        bolCart.classList.remove('invisible')
+    }
+    arrayCart.push({
+        title: arrayOfBooksGl[index].title,
+        price: arrayOfBooksGl[index].price,
+    })
+
+
+console.log('ARRAYCART',arrayCart)
+}
+const addToCart = function () {
+    if (arrayCart) {
+        for (let i = 0; i < arrayCart.length; i++) {
+            insertBook.innerHTML += `<div class="d-flex justify-content-between">
+                <p>${arrayCart[i].title}</p><p>${arrayCart[i].price}</p>
+              </div>`
+        }
+    }
+}
+
+cart.addEventListener('click', addToCart)
+
+

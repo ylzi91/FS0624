@@ -24,8 +24,9 @@ u1.compareAge(u2);
 
 //Esercizio 2
 class Pet {
+
     constructor(_petName, _ownerName, _species, _breed) {
-        this.petName = [_petName];
+        this.petName = _petName;
         this.ownerName = _ownerName;
         this.species = [_species];
         this.breed = [_breed];
@@ -44,6 +45,7 @@ const myUl = document.getElementsByClassName('list-group')[0];
 let thiIs = false;
 document.getElementsByTagName('form')[0].addEventListener('submit', function (e) {
     e.preventDefault();
+    
     myUl.innerHTML = '';
     const petName = document.getElementById('petName').value;
     const ownerName = document.getElementById('ownerName').value;
@@ -52,6 +54,7 @@ document.getElementsByTagName('form')[0].addEventListener('submit', function (e)
 
     if (pets.length === 0) {
         pets.push(new Pet(petName, ownerName, species, breed));
+        console.log(pets[0].petName)
         thiIs = true;
     }
     else if (pets.length > 0) {
