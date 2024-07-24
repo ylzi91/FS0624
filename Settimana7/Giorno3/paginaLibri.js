@@ -88,11 +88,23 @@ console.log('ARRAYCART',arrayCart)
 }
 const addToCart = function () {
     if (arrayCart) {
+        insertBook.innerHTML = ''
         for (let i = 0; i < arrayCart.length; i++) {
-            insertBook.innerHTML += `<div class="d-flex justify-content-between">
-                <p>${arrayCart[i].title}</p><p>${arrayCart[i].price}</p>
+            insertBook.innerHTML += `<div class="d-flex justify-content-between align-items-center mb-3">
+                <p class = " p-0 m-0 ">${arrayCart[i].title} | ${arrayCart[i].price}</p> <button class = "btn btn-danger" onclick = "delCart(${i})"><i class="bi bi-trash3"></i></button>
               </div>`
         }
+    }
+}
+
+const delCart = function (index){
+    arrayCart.splice(index, 1)
+    addToCart()
+    i--
+    bolCart.innerText = i
+    if (i === 0){
+        bolCart.classList.add('invisible')
+        bolCart.classList.remove('visible')
     }
 }
 
