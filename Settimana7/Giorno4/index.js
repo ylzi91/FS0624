@@ -47,6 +47,7 @@ const showCardImg = function (arrayOfCardImg ) {
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">${element.id}</p>
                             <button onclick="deleteCard(event)" class="btn btn-danger">Hide</button>
+                            <a href= "dettagli.html?id=${element.id}" target = "_blank" class="btn btn-warning ">Dettagli</a>
                         </div>
                     </div>
                     `
