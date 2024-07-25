@@ -40,7 +40,7 @@ const showCardImg = function (arrayOfCardImg ) {
     arrayOfCardImg.forEach((element, index) => {
         rowMain.innerHTML += `     
     
-                    <div class="col d-flex">
+                    <div class="col d-flex text-center justify-content-center mb-4">
                         <div class="card">
                             <img src=" ${element.src.medium} " class="card-img-top" alt="...">
                             <div class="card-body">
